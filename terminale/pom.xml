@@ -11,15 +11,23 @@
     <name>Terminal Project</name>
     <url>http://example.com</url>
 
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <configuration>
+                    <outputDirectory>D:\Tomcat7\webapps</outputDirectory>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
     <properties>
     <failonmissingwebxml>false</failonmissingwebxml>
     </properties>
+
     <dependencies>
-        <!--<dependency>-->
-            <!--<groupId>javax.servlet</groupId>-->
-            <!--<artifactId>servlet-api</artifactId>-->
-            <!--<version>3.0.1</version>-->
-        <!--</dependency>-->
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
