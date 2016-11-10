@@ -4,7 +4,7 @@
 <web-app>
     <servlet>
         <servlet-name>hello</servlet-name>
-        <servlet-class>HelloWorld</servlet-class>
+        <servlet-class>com.alice.terminal.HelloWorld</servlet-class>
     </servlet>
 
     <servlet-mapping>
