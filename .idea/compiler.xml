@@ -23,12 +23,10 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="terminal" />
-        <module name="terminale" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="terminal" target="1.5" />
-      <module name="terminale" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

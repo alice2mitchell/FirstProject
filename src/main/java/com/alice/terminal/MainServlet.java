@@ -1,11 +1,13 @@
 package com.alice.terminal;
 
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
+
 
 public class MainServlet extends HttpServlet {
 
@@ -21,7 +23,8 @@ public class MainServlet extends HttpServlet {
 //        out.println("<h1>Hello World!</h1>");
 //        out.println("</body>");
 //        out.println("</html>");
+
         request.setAttribute("name", "Alice");
-        request.getRequestDispatcher("WEB-INF/jsp/JSPExample.jsp").forward(request, response);
+        request.getRequestDispatcher("JSPExample.jsp").forward(request, response);
     }
 }
